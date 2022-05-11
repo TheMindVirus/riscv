@@ -1,0 +1,48 @@
+Tiny C Compiler 0.9.27 - More Options
+Special options:
+-P -P1 with -E: no/alternative #line output
+-dD -dM with -E: output #define directives
+-pthread same as -D_REENTRANT and -lpthread
+-On same as -D__OPTIMIZE__ for n > 0
+-Wp,-opt same as -opt
+-include file include 'file' above each input file
+-isystem dir add 'dir' to system include path
+-static link to static libraries (not recommended)
+-dumpversion print version
+-print-search-dirs print search paths
+-dt with -run/-E: auto-define 'test_...' macros
+
+Ignored options:
+-arch
+-C --param
+-pedantic
+-pipe
+-s
+-traditional
+-W[no-]... warnings: all turn on some
+(*) warnings error[=warning] stop after warning (any or specified)
+write-strings strings are const
+unsupported warn about ignored options, pragmas, etc.
+implicit-function-declaration warn for missing prototype
+(*) discarded-qualifiers warn when const is dropped
+(*) -f[no-]... flags: unsigned-char default char is unsigned signed-char
+default char is signed common use common section instead of bss
+leading-underscore decorate extern symbols ms-extensions
+allow anonymous struct in struct dollars-in-identifiers
+allow '$' in C symbols test-coverage create code coverage
+code -m... target specific options: ms-bitfields use MSVC bitfield layout
+-Wl,... linker options:
+-nostdlib do not link with standard crt/libs
+-[no-]whole-archive load lib(s) fully/only as needed
+-export-all-symbols same as -rdynamic -export-dynamic same as -rdynamic
+-image-base= -Ttext= set base address of executable
+-section-alignment= set section alignment in executable
+-rpath= set dynamic library search path
+-enable-new-dtags set DT_RUNPATH instead of DT_RPATH
+-soname= set DT_SONAME elf tag
+-Bsymbolic set DT_SYMBOLIC elf tag
+-oformat=[elf32/64-* binary] set executable output format
+-init= -fini= -as-needed -O (ignored)
+
+Predefined macros:
+tcc -E -dM - < /dev/null See also the manual for more details.

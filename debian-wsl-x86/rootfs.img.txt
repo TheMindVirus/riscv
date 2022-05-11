@@ -1,0 +1,3 @@
+[INFO]: Replace these files with the generated root.img, opensbi.elf and uboot.elf from the official qemu sources
+[INFO]: Instructions and More Information can be found in README.md
+[WARN]: This file can take up to 10GB on the host machine if that is what is specified

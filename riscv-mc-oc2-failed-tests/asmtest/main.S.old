@@ -1,0 +1,10 @@
+.global main
+
+main:
+    subd x0, x0, x0
+    subd x1, x1, x1
+    subd x2, x2, x2
+    sd x0, 0x0, 0x0
+    sd x1, 0x1, 0x0
+    sd x2, 0x2, 0x0
+    addd x0, x1, x2
