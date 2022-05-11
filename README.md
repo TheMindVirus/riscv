@@ -47,8 +47,8 @@ This experiment was originally tested with partial interpreter failure on OpenCo
 a Minecraft Mod featuring Programmable Redstone Computers, Sedna Linux, GNU Nano and TinyCC \
 for work-in-progress RISCV64 one-time-compilation to build more dynamic frameworks such as micropython
 
-A `@micropython.asm_riscv` decorator was missing and is not recommended, as was a recommended python module.
-Several packages including riscv-gcc was missing, so the available TinyCC compiler was used instead. \
+A `@micropython.asm_riscv` decorator was missing and is not recommended, as was a recommended python module. \
+Several packages including riscv-gcc was missing, so the available TinyCC compiler was used instead.
 
 The `jalr` instruction was found to be missing as well as all references to the `pc` (program counter). \
 This made it very difficult to see how risc-v could be made useful and should not be learnt from.
