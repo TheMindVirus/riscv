@@ -21,6 +21,7 @@ In Debian QEMU RISCV:
 # Some packages will not be installed such as make, git, build-essential etc...
 # You may get confused between Debian WSL and Debian RISCV running inside WSL QEMU
 # You will need to use nano to manually write the files found in debian-wsl-x86-qemu-riscv
+# You may encounter odd glitches with text not displaying properly and arrow keys not working
 # These assembly programs will let you access the full potential of new chip architectures
 # without disrupting the host system
 
