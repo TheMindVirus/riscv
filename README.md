@@ -42,3 +42,17 @@ to understand how RISC-V and other assembly standards can be made useful.
 ![screenshot](/screenshot.png)
 ![riscvtestpassasm](/riscvtestpassasm.png)
 
+### OpenComputersII
+This experiment was originally tested with partial interpreter failure on OpenComputersII, \
+a Minecraft Mod featuring Programmable Redstone Computers, Sedna Linux, GNU Nano and TinyCC \
+for work-in-progress RISCV64 one-time-compilation to build more dynamic frameworks such as micropython
+
+A `@micropython.asm_riscv` decorator was missing and is not recommended, as was a recommended python module.
+Several packages including riscv-gcc was missing, so the available TinyCC compiler was used instead. \
+
+The `jalr` instruction was found to be missing as well as all references to the `pc` (program counter). \
+This made it very difficult to see how risc-v could be made useful and should not be learnt from.
+
+**Developmental Repositories:**
+ - https://github.com/fnuecke/oc2/blob/3407e84d53db9869e15f8a909d4fcc2a153579be/src/main/scripts/bin/export.lua
+ - https://github.com/TinyCC/tinycc/blob/748e38ad991c595787f02f018232ae08c85753a6/riscv64-asm.c#L575
