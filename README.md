@@ -12,7 +12,7 @@ In Debian WSL:
 apt update
 apt install qemu-system-misc git make
 git clone https://github.com/themindvirus/riscv
-cd debian-wsl-x86
+cd riscv/debian-wsl-x86
 make # This will attempt to boot OpenSBI inside QEMU
 ```
 In Debian QEMU RISCV:
