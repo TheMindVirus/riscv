@@ -18,10 +18,10 @@ make # This will attempt to boot OpenSBI inside QEMU
 In Debian QEMU RISCV:
 ```
 # The default password for root is your password for WSL when you made your chroot
-# Some packages will not be installed such as make, git, build-essential etc...
 # You may get confused between Debian WSL and Debian RISCV running inside WSL QEMU
 # You will need to use nano to manually write the files found in debian-wsl-x86-qemu-riscv
 # You may encounter odd glitches with text not displaying properly and arrow keys not working
+# Some packages will not be installed such as make, git, build-essential etc...
 # These assembly programs will let you access the full potential of new chip architectures
 # without disrupting the host system
 
