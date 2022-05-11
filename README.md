@@ -35,9 +35,9 @@ make
 # ./app # Example build commands you may encounter
 # shutdown # To safely return from Debian QEMU RISCV to Debian WSL (no power off if run twice)
 ```
-A lot of the operational complexity involved in putting this system together \
+**A lot of the operational complexity involved in putting this system together \
 is absolutely unnecessary and should be made a lot simpler for people \
-to understand how RISC-V and other assembly standards can be made useful.
+to understand how RISC-V and other assembly standards can be made useful.**
 
 ### RISC-V Instruction Set Specification 2019: https://riscv.org/wp-content/uploads/2019/06/riscv-spec.pdf
 
